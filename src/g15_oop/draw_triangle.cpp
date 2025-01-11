@@ -1,10 +1,10 @@
-#include <g15/draw_triangle.h>
-#include <g15/triangle.h>
+#include <g15_oop/draw_triangle.h>
+#include <g15_oop/triangle.h>
 
 #include <iostream>
 
 
-namespace G15 {
+namespace G15_OOP {
 
 void draw(Triangle const& triangle) {
 

@@ -1,7 +1,7 @@
-#ifndef G15_SHAPE_
-#define G15_SHAPE_
+#ifndef G15_OOP_SHAPE_
+#define G15_OOP_SHAPE_
 
-namespace G15 {
+namespace G15_OOP {
 
 enum ShapeType {
     circle,

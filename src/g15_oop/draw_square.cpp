@@ -1,10 +1,10 @@
-#include <g15/draw_square.h>
-#include <g15/square.h>
+#include <g15_oop/draw_square.h>
+#include <g15_oop/square.h>
 
 #include <iostream>
 
 
-namespace G15 {
+namespace G15_OOP {
 
 void draw(Square const& square) {
 

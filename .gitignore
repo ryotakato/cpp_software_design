@@ -36,3 +36,6 @@
 .vs/
 .idea/
 out/
+
+# Ignore module cache
+gcm.cache

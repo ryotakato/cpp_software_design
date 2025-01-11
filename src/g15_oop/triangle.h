@@ -1,7 +1,7 @@
-#include <g15/point.h>
-#include <g15/shape.h>
+#include <g15_oop/point.h>
+#include <g15_oop/shape.h>
 
-namespace G15 {
+namespace G15_OOP {
 
 class Triangle : public Shape {
     public:

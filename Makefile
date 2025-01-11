@@ -8,6 +8,7 @@ TARGET		= software_design
 TEST_TARGET	= test
 SRCDIR		= ./src
 OUTDIR		= ./out
+GCM_CACHE	= gcm.cache
 SRCS		= $(shell find $(SRCDIR) -name "*.cpp" -type f | xargs)
 OBJS		= $(SRCS:.cpp=.o)
 TEST_SRCS	= $(shell find $(SRCDIR) -name "*.cpp" -type f -not -name '*main.cpp' | xargs)
@@ -15,7 +16,7 @@ TEST_OBJS	= $(TEST_SRCS:.cpp=.o)
 DEPENDS		= $(OBJS:.o=.d)
 INCDIR		= -I./src/
 CXX		= g++
-CXXFLAGS	= -std=c++20 -Wall -Wextra -Werror -Wpedantic -MMD -MP -lgtest -lgtest_main $(INCDIR)
+CXXFLAGS	= -std=c++20 -fmodules-ts -Wall -Wextra -Werror -Wpedantic -MMD -MP -lgtest -lgtest_main $(INCDIR)
 
 .PHONY: all
 all: $(TARGET)
@@ -36,6 +37,7 @@ clean:
 .PHONY: fclean
 fclean: clean
 	$(RM) $(OUTDIR)/$(TARGET) $(OUTDIR)/$(TEST_TARGET)
+	rm -rf $(GCM_CACHE)
 
 .PHONY: re
 re: fclean all

@@ -1,4 +1,4 @@
-namespace G15 {
+namespace G15_OOP {
 
 class Square;
 
