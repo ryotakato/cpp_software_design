@@ -5,12 +5,14 @@ namespace G15_OOP {
 
 class Circle : public Shape {
     public:
-        explicit Circle(double radius) : Shape( circle), radius_(radius) {
+        explicit Circle(double radius) : radius_(radius) {
             /* Checking that the given radius is valid */
         }
 
         double radius() const { return radius_; }
         Point center() const { return center_; }
+
+        void draw() const override;
 
     private:
         double radius_;

@@ -16,7 +16,5 @@ int main(int argc, char* argv[]) {
     //G15::main_g15();
     G15_OOP::main_g15_oop();
 
-
-
     return 0;
 }

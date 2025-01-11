@@ -5,13 +5,15 @@ namespace G15_OOP {
 
 class Triangle : public Shape {
     public:
-        explicit Triangle(double height, double width) : Shape(triangle), height_(height), width_(width) {
+        explicit Triangle(double height, double width) : height_(height), width_(width) {
             /* Checking that the given height,width is valid */
         }
 
         double height() const { return height_; }
         double width() const { return width_; }
         Point center() const { return center_; }
+
+        void draw() const override;
 
     private:
         double height_;
