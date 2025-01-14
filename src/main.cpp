@@ -1,7 +1,9 @@
+#include <cstdlib>
 #include <iostream>
 
 //import G15;
-import G15_OOP;
+//import G15_OOP;
+import G16;
 
 int main(int argc, char* argv[]) {
     std::cout << "~~~~~~~~~~~" << std::endl;
@@ -14,7 +16,8 @@ int main(int argc, char* argv[]) {
 
 
     //G15::main_g15();
-    G15_OOP::main_g15_oop();
+    //G15_OOP::main_g15_oop();
+    G16::main_g16();
 
-    return 0;
+    return EXIT_SUCCESS;
 }
